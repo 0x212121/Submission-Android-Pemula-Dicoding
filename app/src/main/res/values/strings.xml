@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SewaBuku</string>
+    <string name="nama_buku">Nama Buku</string>
+    <string name="detail">Detail</string>
+    <string name="name_me">Indra Wijaya</string>
+    <string name="email_me">indra.x.stream@gmail.com</string>
+    <string name="overview">Book Overview</string>
+    <string name="identity">Penulis: \nPenerbit: \nTahun: \nTebal Buku: </string>
+    <string name="content_identity">buku_identity</string>
+    <string name="page">Halaman</string>
+    <string name="writer">Writer</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="sewa">Sewa Buku</string>
+    <string name="beli">Beli</string>
+</resources>

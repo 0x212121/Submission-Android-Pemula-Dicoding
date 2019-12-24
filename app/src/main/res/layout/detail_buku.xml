@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            tools:context=".DetailBuku">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                        android:text="Nama Buku"
+                        android:id="@id/tv_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0a0a0a"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="12dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="0dp"
+                android:src="@android:color/darker_gray"/>
+        </LinearLayout>
+        <TextView
+                android:text="Harga Buku"
+                style="@style/TextContent.Black"
+                android:textSize="20sp"
+                android:id="@+id/tv_item_harga"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Penulis"/>
+                <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_writer"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                style="@style/TextSpec.Field"
+                android:text="Penerbit"/>
+
+                <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/tv_item_penerbit"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Tahun"/>
+                <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_tahun"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Jumlah Halaman"/>
+                <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_page"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="Bahasa"/>
+                <TextView
+                        style="@style/TextSpec.Value"
+                        android:id="@+id/tv_item_lang"/>
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:textStyle="normal"
+                    android:textAlignment="inherit"
+                    android:id="@+id/tv_item_detail"/>
+            </TableRow>
+            />
+        </TableLayout>
+
+        <Button
+                android:text="@string/beli"
+                style="@style/ButtonGeneral"/>
+    </LinearLayout>
+</ScrollView>
